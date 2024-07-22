@@ -28,7 +28,7 @@ The purpose of this script is to simplify the management of LUKS encryption keys
 
 3. Run the script:
    ```bash
-   sudo ./main.py
+   sudo python ./main.py
    ```
 
 ### Interactive Steps
