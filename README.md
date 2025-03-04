@@ -1,20 +1,20 @@
-# 🔐 LUKS Key Management (lukyma)
+# 🔐 LUKS Key Manager
 
-**Lukyma** is a Python tool for managing LUKS encryption keys. It allows you to add a new key with a specified memory cost and securely remove an old key—ideal for devices with limited RAM (e.g., Raspberry Pi).
+**LUKS Key Manager** is a Python tool for managing LUKS encryption keys. It allows you to add a new key with a specified memory cost and securely remove an old key—ideal for devices with limited RAM (e.g., Raspberry Pi). This tool is supported by the **lukyma** alias through Kevin's Package Manager.
 
 ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python version](https://img.shields.io/badge/Python-3.x-blue.svg)
 
 ## 🎯 Purpose
 
-Lukyma simplifies LUKS key management by offering an interactive interface to add and remove encryption keys efficiently. Its streamlined workflow makes it perfect for maintaining secure systems without manual key juggling.
+LUKS Key Manager simplifies the management of LUKS encryption keys by offering an interactive interface to add and remove keys efficiently. Its streamlined workflow makes it perfect for maintaining secure systems without the hassle of manual key juggling.
 
 ## 🚀 Features
 
 - **Add New Key:** Insert a new LUKS key with a user-defined memory cost.
 - **Remove Old Key:** Securely remove an existing LUKS key.
-- **Interactive Device Selection:** Choose the block device to manage from a list.
-- **Automated Prompts:** Guided prompts for passphrases and memory cost inputs.
+- **Interactive Device Selection:** Choose the block device to manage from a dynamically generated list.
+- **Automated Prompts:** Guided prompts for entering passphrases and memory cost values.
 
 ## 🛠 Prerequisites
 
@@ -29,32 +29,28 @@ pip install python-pexpect
 
 ## 📥 Installation
 
-Clone the repository and set it up:
+You can install **LUKS Key Manager** easily using [Kevin's Package Manager](https://github.com/kevinveenbirkenbach/package-manager). Once you have the package manager set up, simply run:
+
 ```bash
-git clone https://github.com/your-username/luks-key-management.git
-cd luks-key-management
-chmod +x main.py
+pkgman install lukyma
 ```
 
-You can install this tool using Kevins Package Manager with the alias **lukyma**:
-```bash
-kevins-package-manager install lukyma
-```
+This command installs the tool under the alias **lukyma**, which serves as the support framework for **LUKS Key Manager**.
 
 ## 🚀 Usage
 
 Run the script with superuser privileges:
 ```bash
-sudo python ./main.py
+sudo lukyma ./main.py
 ```
 
 ### Interactive Steps
 
-1. **Select Device:** The script lists available block devices. Choose the device number you want to manage.
+1. **Select Device:** The tool lists available block devices—choose the device number you wish to manage.
 2. **Enter Existing Passphrase:** Provide the current LUKS passphrase when prompted.
 3. **Enter New Passphrase:** Input the new passphrase for the key.
 4. **Specify Memory Cost:** Enter the memory cost (in Kilobytes) to configure the new key.
-5. **Key Management:** The script will add the new key with the specified memory cost and then prompt you to remove the old key.
+5. **Key Management:** The script will add the new key with the specified memory cost, then prompt you to remove the old key.
 
 ## 📜 License
 
@@ -68,7 +64,7 @@ Developed by **Kevin Veen-Birkenbach**
 
 ## ⚠️ Disclaimer
 
-**Lukyma** was developed for educational and practical purposes. Always back up your data before modifying your LUKS configuration. Use this tool at your own risk.
+**LUKS Key Manager** is provided for educational and practical purposes. Always back up your data before making changes to your LUKS configuration. Use this tool at your own risk.
 
 ---
 
