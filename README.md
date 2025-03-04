@@ -1,5 +1,4 @@
-# 🔐 LUKS Key Management Script
-
+# 🔐 LUKS Key Management
 This repository contains a Python script for managing LUKS encryption keys. The script allows you to add a new key with specified memory cost and remove an old key securely. This is particularly useful for systems with limited RAM, such as Raspberry Pi.
 
 ## 🎯 Purpose
