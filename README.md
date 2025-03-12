@@ -1,4 +1,6 @@
 # 🔐 LUKS Key Manager (lukyma)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue?logo=github)](https://github.com/sponsors/kevinveenbirkenbach) [![Patreon](https://img.shields.io/badge/Support-Patreon-orange?logo=patreon)](https://www.patreon.com/c/kevinveenbirkenbach) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20Coffee-Funding-yellow?logo=buymeacoffee)](https://buymeacoffee.com/kevinveenbirkenbach) [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://s.veen.world/paypaldonate)
+
 
 **LUKS Key Manager** is a Python tool for managing LUKS encryption keys. It allows you to add a new key with a specified memory cost and securely remove an old key—ideal for devices with limited RAM (e.g., Raspberry Pi). This tool is supported by the **lukyma** alias through Kevin's Package Manager.
 
