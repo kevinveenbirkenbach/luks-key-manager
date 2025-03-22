@@ -43,7 +43,7 @@ This command installs the tool under the alias **lukyma**, which serves as the s
 
 Run the script with superuser privileges:
 ```bash
-sudo lukyma ./main.py
+sudo lukyma
 ```
 
 ### Interactive Steps
